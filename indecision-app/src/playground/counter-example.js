@@ -32,11 +32,11 @@ class Counter extends React.Component {
   handleReset() {
     console.log('handleReset');
 
-    this.setState(
-      {
+    this.setState( () => {
+      return {
         count: 0
-      }
-    );
+      };
+    });
   }
 
   render() {
