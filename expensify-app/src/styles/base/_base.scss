@@ -14,3 +14,16 @@ button {
 button:disabled {
   cursor: default;
 }
+
+.is-active {
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+
+  a {
+    padding: 20px 10px;
+  }
+}
