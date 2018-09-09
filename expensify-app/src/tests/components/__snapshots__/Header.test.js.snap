@@ -1,35 +1,289 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<header>
-  <h1>
-    Expensify
-  </h1>
-  <div
-    className="menu"
-  >
-    <NavLink
-      activeClassName="is-active"
-      aria-current="page"
-      exact={true}
-      to="/"
-    >
-      Dash
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      aria-current="page"
-      to="/create"
-    >
-      Create Expense
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      aria-current="page"
-      to="/help"
-    >
-      Help
-    </NavLink>
-  </div>
-</header>
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Expensify
+</h1>,
+        <div
+          className="menu"
+>
+          <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    exact={true}
+                    to="/"
+          >
+                    Dash
+          </NavLink>
+          <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/create"
+          >
+                    Create Expense
+          </NavLink>
+          <NavLink
+                    activeClassName="is-active"
+                    aria-current="page"
+                    to="/help"
+          >
+                    Help
+          </NavLink>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Expensify",
+        },
+        "ref": null,
+        "rendered": "Expensify",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="is-active"
+              aria-current="page"
+              exact={true}
+              to="/"
+>
+              Dash
+</NavLink>,
+            <NavLink
+              activeClassName="is-active"
+              aria-current="page"
+              to="/create"
+>
+              Create Expense
+</NavLink>,
+            <NavLink
+              activeClassName="is-active"
+              aria-current="page"
+              to="/help"
+>
+              Help
+</NavLink>,
+          ],
+          "className": "menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "is-active",
+              "aria-current": "page",
+              "children": "Dash",
+              "exact": true,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Dash",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "is-active",
+              "aria-current": "page",
+              "children": "Create Expense",
+              "to": "/create",
+            },
+            "ref": null,
+            "rendered": "Create Expense",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "is-active",
+              "aria-current": "page",
+              "children": "Help",
+              "to": "/help",
+            },
+            "ref": null,
+            "rendered": "Help",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Expensify
+</h1>,
+          <div
+            className="menu"
+>
+            <NavLink
+                        activeClassName="is-active"
+                        aria-current="page"
+                        exact={true}
+                        to="/"
+            >
+                        Dash
+            </NavLink>
+            <NavLink
+                        activeClassName="is-active"
+                        aria-current="page"
+                        to="/create"
+            >
+                        Create Expense
+            </NavLink>
+            <NavLink
+                        activeClassName="is-active"
+                        aria-current="page"
+                        to="/help"
+            >
+                        Help
+            </NavLink>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Expensify",
+          },
+          "ref": null,
+          "rendered": "Expensify",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="is-active"
+                aria-current="page"
+                exact={true}
+                to="/"
+>
+                Dash
+</NavLink>,
+              <NavLink
+                activeClassName="is-active"
+                aria-current="page"
+                to="/create"
+>
+                Create Expense
+</NavLink>,
+              <NavLink
+                activeClassName="is-active"
+                aria-current="page"
+                to="/help"
+>
+                Help
+</NavLink>,
+            ],
+            "className": "menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "is-active",
+                "aria-current": "page",
+                "children": "Dash",
+                "exact": true,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Dash",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "is-active",
+                "aria-current": "page",
+                "children": "Create Expense",
+                "to": "/create",
+              },
+              "ref": null,
+              "rendered": "Create Expense",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "is-active",
+                "aria-current": "page",
+                "children": "Help",
+                "to": "/help",
+              },
+              "ref": null,
+              "rendered": "Help",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;
