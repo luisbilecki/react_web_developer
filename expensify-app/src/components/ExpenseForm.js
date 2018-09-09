@@ -15,7 +15,7 @@ export default class ExpenseForm extends React.Component {
       error: ''
     };
   }
-  
+
   onDescriptionChange = (e) => {
     const description = e.target.value;
     this.setState(() => ({ description }));
@@ -59,7 +59,7 @@ export default class ExpenseForm extends React.Component {
       });
     }
   };
-
+  
   render() {
     return (
       <div>
