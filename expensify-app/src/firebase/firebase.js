@@ -16,6 +16,10 @@ const database = firebase.database();
 database.ref().set({
   name: 'Luis F. Bilecki',
   age: 25,
+  stressLevel: 6,
+  job: {
+    title: 'Fullstack developer',
+  },
   isSingle: true,
   location: {
     city: 'Rio Negrinho',
@@ -49,6 +53,13 @@ database
   }).catch((e) => {
     console.log('Did not remove data', e);
   });
+
+
+database.ref().update({
+  stressLevel: 9,
+  'job/company': 'Amazon',
+  'location/city': 'Seattle'
+});
 
 /*
 database
