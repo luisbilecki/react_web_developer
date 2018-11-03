@@ -13,6 +13,13 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+// Fetching data from firebase
+database.ref().on('value', (snapshot) => {
+  const val = snapshot.val();
+  console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
+})
+
+/*
 database.ref().set({
   name: 'Luis F. Bilecki',
   age: 25,
@@ -31,10 +38,10 @@ database.ref().set({
   console.log('This failed.', e);
 });
 
-// database.ref().set('This is my data.');
+ database.ref().set('This is my data.');
 
-//database.ref('age').set(25);
-//database.ref('location/city').set('Joinville');
+database.ref('age').set(25);
+database.ref('location/city').set('Joinville');
 
 database.ref('attributes').set({
   height: 175,
@@ -61,7 +68,6 @@ database.ref().update({
   'location/city': 'Seattle'
 });
 
-/*
 database
   .ref()
   .remove()
@@ -72,4 +78,5 @@ database
   });
 */
 
-console.log('I made a request to change the data.');
+// console.log('I made a request to change the data.');
+
