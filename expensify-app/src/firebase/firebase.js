@@ -13,11 +13,57 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+// child_removed
+database.ref('expenses').on('child_removed', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
+});
+
+// child_changed
+database.ref('expenses').on('child_changed', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
+});
+
+// child_added
+database.ref('expenses').on('child_added', (snapshot) => {
+  console.log(snapshot.key, snapshot.val());
+});
+
+database.ref('expenses').push({
+  description: 'Rent',
+  note: '',
+  amount: 109500,
+  createdAt: 976123498763
+});
+
+// Setup "expenses" with three items (description, note, amount, createdAt)
+/*
+database.ref('expenses').push({
+  description: 'Rent',
+  note: '',
+  amount: 109500,
+  createdAt: 976123498763
+});
+
+database.ref('expenses').push({
+  description: 'Phone bill',
+  note: '',
+  amount: 5900,
+  createdAt: 976123498763
+});
+
+database.ref('expenses').push({
+  description: 'Food',
+  note: '',
+  amount: 1200,
+  createdAt: 976123498763
+});
+*/
+
 // Fetching data from firebase
-database.ref().on('value', (snapshot) => {
-  const val = snapshot.val();
-  console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
-})
+// database.ref().on('value', (snapshot) => {
+  // const val = snapshot.val();
+  // console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
+// })
 
 /*
 database.ref().set({
