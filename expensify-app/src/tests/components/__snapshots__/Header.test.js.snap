@@ -2,13 +2,13 @@
 
 exports[`should render Header correctly 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -26,7 +26,6 @@ ShallowWrapper {
 >
           <NavLink
                     activeClassName="is-active"
-                    aria-current="page"
                     exact={true}
                     to="/"
           >
@@ -34,14 +33,12 @@ ShallowWrapper {
           </NavLink>
           <NavLink
                     activeClassName="is-active"
-                    aria-current="page"
                     to="/create"
           >
                     Create Expense
           </NavLink>
           <NavLink
                     activeClassName="is-active"
-                    aria-current="page"
                     to="/help"
           >
                     Help
@@ -70,7 +67,6 @@ ShallowWrapper {
           "children": Array [
             <NavLink
               activeClassName="is-active"
-              aria-current="page"
               exact={true}
               to="/"
 >
@@ -78,14 +74,12 @@ ShallowWrapper {
 </NavLink>,
             <NavLink
               activeClassName="is-active"
-              aria-current="page"
               to="/create"
 >
               Create Expense
 </NavLink>,
             <NavLink
               activeClassName="is-active"
-              aria-current="page"
               to="/help"
 >
               Help
@@ -101,7 +95,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "activeClassName": "is-active",
-              "aria-current": "page",
               "children": "Dash",
               "exact": true,
               "to": "/",
@@ -116,7 +109,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "activeClassName": "is-active",
-              "aria-current": "page",
               "children": "Create Expense",
               "to": "/create",
             },
@@ -130,7 +122,6 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "activeClassName": "is-active",
-              "aria-current": "page",
               "children": "Help",
               "to": "/help",
             },
@@ -159,7 +150,6 @@ ShallowWrapper {
 >
             <NavLink
                         activeClassName="is-active"
-                        aria-current="page"
                         exact={true}
                         to="/"
             >
@@ -167,14 +157,12 @@ ShallowWrapper {
             </NavLink>
             <NavLink
                         activeClassName="is-active"
-                        aria-current="page"
                         to="/create"
             >
                         Create Expense
             </NavLink>
             <NavLink
                         activeClassName="is-active"
-                        aria-current="page"
                         to="/help"
             >
                         Help
@@ -203,7 +191,6 @@ ShallowWrapper {
             "children": Array [
               <NavLink
                 activeClassName="is-active"
-                aria-current="page"
                 exact={true}
                 to="/"
 >
@@ -211,14 +198,12 @@ ShallowWrapper {
 </NavLink>,
               <NavLink
                 activeClassName="is-active"
-                aria-current="page"
                 to="/create"
 >
                 Create Expense
 </NavLink>,
               <NavLink
                 activeClassName="is-active"
-                aria-current="page"
                 to="/help"
 >
                 Help
@@ -234,7 +219,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "activeClassName": "is-active",
-                "aria-current": "page",
                 "children": "Dash",
                 "exact": true,
                 "to": "/",
@@ -249,7 +233,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "activeClassName": "is-active",
-                "aria-current": "page",
                 "children": "Create Expense",
                 "to": "/create",
               },
@@ -263,7 +246,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "activeClassName": "is-active",
-                "aria-current": "page",
                 "children": "Help",
                 "to": "/help",
               },
@@ -282,6 +264,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

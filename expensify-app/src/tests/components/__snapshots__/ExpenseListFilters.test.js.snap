@@ -2,7 +2,6 @@
 
 exports[`should render ExpenseListFilters correctly 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseListFilters
     filters={
@@ -23,6 +22,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -69,7 +69,6 @@ ShallowWrapper {
           hideKeyboardShortcutsPanel={false}
           horizontalMargin={0}
           initialVisibleMonth={null}
-          inputIconPosition="before"
           isDayBlocked={[Function]}
           isDayHighlighted={[Function]}
           isOutsideRange={[Function]}
@@ -85,11 +84,9 @@ ShallowWrapper {
           onFocusChange={[Function]}
           onNextMonthClick={[Function]}
           onPrevMonthClick={[Function]}
-          openDirection="down"
           orientation="horizontal"
           phrases={
                     Object {
-                              "calendarLabel": "Calendar",
                               "chooseAvailableEndDate": [Function],
                               "chooseAvailableStartDate": [Function],
                               "clearDates": "Clear Dates",
@@ -131,7 +128,6 @@ ShallowWrapper {
           startDate={null}
           startDateId="startDate"
           startDatePlaceholderText="Start Date"
-          weekDayFormat="dd"
           withFullScreenPortal={false}
           withPortal={false}
 />,
@@ -222,7 +218,6 @@ ShallowWrapper {
           "hideKeyboardShortcutsPanel": false,
           "horizontalMargin": 0,
           "initialVisibleMonth": null,
-          "inputIconPosition": "before",
           "isDayBlocked": [Function],
           "isDayHighlighted": [Function],
           "isOutsideRange": [Function],
@@ -238,10 +233,8 @@ ShallowWrapper {
           "onFocusChange": [Function],
           "onNextMonthClick": [Function],
           "onPrevMonthClick": [Function],
-          "openDirection": "down",
           "orientation": "horizontal",
           "phrases": Object {
-            "calendarLabel": "Calendar",
             "chooseAvailableEndDate": [Function],
             "chooseAvailableStartDate": [Function],
             "clearDates": "Clear Dates",
@@ -282,7 +275,6 @@ ShallowWrapper {
           "startDate": null,
           "startDateId": "startDate",
           "startDatePlaceholderText": "Start Date",
-          "weekDayFormat": "dd",
           "withFullScreenPortal": false,
           "withPortal": false,
         },
@@ -337,7 +329,6 @@ ShallowWrapper {
             hideKeyboardShortcutsPanel={false}
             horizontalMargin={0}
             initialVisibleMonth={null}
-            inputIconPosition="before"
             isDayBlocked={[Function]}
             isDayHighlighted={[Function]}
             isOutsideRange={[Function]}
@@ -353,11 +344,9 @@ ShallowWrapper {
             onFocusChange={[Function]}
             onNextMonthClick={[Function]}
             onPrevMonthClick={[Function]}
-            openDirection="down"
             orientation="horizontal"
             phrases={
                         Object {
-                                    "calendarLabel": "Calendar",
                                     "chooseAvailableEndDate": [Function],
                                     "chooseAvailableStartDate": [Function],
                                     "clearDates": "Clear Dates",
@@ -399,7 +388,6 @@ ShallowWrapper {
             startDate={null}
             startDateId="startDate"
             startDatePlaceholderText="Start Date"
-            weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
 />,
@@ -490,7 +478,6 @@ ShallowWrapper {
             "hideKeyboardShortcutsPanel": false,
             "horizontalMargin": 0,
             "initialVisibleMonth": null,
-            "inputIconPosition": "before",
             "isDayBlocked": [Function],
             "isDayHighlighted": [Function],
             "isOutsideRange": [Function],
@@ -506,10 +493,8 @@ ShallowWrapper {
             "onFocusChange": [Function],
             "onNextMonthClick": [Function],
             "onPrevMonthClick": [Function],
-            "openDirection": "down",
             "orientation": "horizontal",
             "phrases": Object {
-              "calendarLabel": "Calendar",
               "chooseAvailableEndDate": [Function],
               "chooseAvailableStartDate": [Function],
               "clearDates": "Clear Dates",
@@ -550,7 +535,6 @@ ShallowWrapper {
             "startDate": null,
             "startDateId": "startDate",
             "startDatePlaceholderText": "Start Date",
-            "weekDayFormat": "dd",
             "withFullScreenPortal": false,
             "withPortal": false,
           },
@@ -566,6 +550,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -574,7 +568,6 @@ ShallowWrapper {
 
 exports[`should render ExpenseListFilters with alt data correctly 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseListFilters
     filters={
@@ -595,6 +588,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -641,7 +635,6 @@ ShallowWrapper {
           hideKeyboardShortcutsPanel={false}
           horizontalMargin={0}
           initialVisibleMonth={null}
-          inputIconPosition="before"
           isDayBlocked={[Function]}
           isDayHighlighted={[Function]}
           isOutsideRange={[Function]}
@@ -657,11 +650,9 @@ ShallowWrapper {
           onFocusChange={[Function]}
           onNextMonthClick={[Function]}
           onPrevMonthClick={[Function]}
-          openDirection="down"
           orientation="horizontal"
           phrases={
                     Object {
-                              "calendarLabel": "Calendar",
                               "chooseAvailableEndDate": [Function],
                               "chooseAvailableStartDate": [Function],
                               "clearDates": "Clear Dates",
@@ -703,7 +694,6 @@ ShallowWrapper {
           startDate={"1970-01-01T00:00:00.000Z"}
           startDateId="startDate"
           startDatePlaceholderText="Start Date"
-          weekDayFormat="dd"
           withFullScreenPortal={false}
           withPortal={false}
 />,
@@ -794,7 +784,6 @@ ShallowWrapper {
           "hideKeyboardShortcutsPanel": false,
           "horizontalMargin": 0,
           "initialVisibleMonth": null,
-          "inputIconPosition": "before",
           "isDayBlocked": [Function],
           "isDayHighlighted": [Function],
           "isOutsideRange": [Function],
@@ -810,10 +799,8 @@ ShallowWrapper {
           "onFocusChange": [Function],
           "onNextMonthClick": [Function],
           "onPrevMonthClick": [Function],
-          "openDirection": "down",
           "orientation": "horizontal",
           "phrases": Object {
-            "calendarLabel": "Calendar",
             "chooseAvailableEndDate": [Function],
             "chooseAvailableStartDate": [Function],
             "clearDates": "Clear Dates",
@@ -854,7 +841,6 @@ ShallowWrapper {
           "startDate": "1970-01-01T00:00:00.000Z",
           "startDateId": "startDate",
           "startDatePlaceholderText": "Start Date",
-          "weekDayFormat": "dd",
           "withFullScreenPortal": false,
           "withPortal": false,
         },
@@ -909,7 +895,6 @@ ShallowWrapper {
             hideKeyboardShortcutsPanel={false}
             horizontalMargin={0}
             initialVisibleMonth={null}
-            inputIconPosition="before"
             isDayBlocked={[Function]}
             isDayHighlighted={[Function]}
             isOutsideRange={[Function]}
@@ -925,11 +910,9 @@ ShallowWrapper {
             onFocusChange={[Function]}
             onNextMonthClick={[Function]}
             onPrevMonthClick={[Function]}
-            openDirection="down"
             orientation="horizontal"
             phrases={
                         Object {
-                                    "calendarLabel": "Calendar",
                                     "chooseAvailableEndDate": [Function],
                                     "chooseAvailableStartDate": [Function],
                                     "clearDates": "Clear Dates",
@@ -971,7 +954,6 @@ ShallowWrapper {
             startDate={"1970-01-01T00:00:00.000Z"}
             startDateId="startDate"
             startDatePlaceholderText="Start Date"
-            weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
 />,
@@ -1062,7 +1044,6 @@ ShallowWrapper {
             "hideKeyboardShortcutsPanel": false,
             "horizontalMargin": 0,
             "initialVisibleMonth": null,
-            "inputIconPosition": "before",
             "isDayBlocked": [Function],
             "isDayHighlighted": [Function],
             "isOutsideRange": [Function],
@@ -1078,10 +1059,8 @@ ShallowWrapper {
             "onFocusChange": [Function],
             "onNextMonthClick": [Function],
             "onPrevMonthClick": [Function],
-            "openDirection": "down",
             "orientation": "horizontal",
             "phrases": Object {
-              "calendarLabel": "Calendar",
               "chooseAvailableEndDate": [Function],
               "chooseAvailableStartDate": [Function],
               "clearDates": "Clear Dates",
@@ -1122,7 +1101,6 @@ ShallowWrapper {
             "startDate": "1970-01-01T00:00:00.000Z",
             "startDateId": "startDate",
             "startDatePlaceholderText": "Start Date",
-            "weekDayFormat": "dd",
             "withFullScreenPortal": false,
             "withPortal": false,
           },
@@ -1138,6 +1116,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },

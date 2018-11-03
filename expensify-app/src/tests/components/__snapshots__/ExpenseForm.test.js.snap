@@ -2,13 +2,13 @@
 
 exports[`should render ExpenseForm correctly 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseForm />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -50,7 +50,6 @@ ShallowWrapper {
                     horizontalMargin={0}
                     id="date"
                     initialVisibleMonth={null}
-                    inputIconPosition="before"
                     isDayBlocked={[Function]}
                     isDayHighlighted={[Function]}
                     isOutsideRange={[Function]}
@@ -65,11 +64,9 @@ ShallowWrapper {
                     onFocusChange={[Function]}
                     onNextMonthClick={[Function]}
                     onPrevMonthClick={[Function]}
-                    openDirection="down"
                     orientation="horizontal"
                     phrases={
                               Object {
-                                        "calendarLabel": "Calendar",
                                         "chooseAvailableDate": [Function],
                                         "clearDate": "Clear Date",
                                         "closeDatePicker": "Close",
@@ -107,7 +104,6 @@ ShallowWrapper {
                     screenReaderInputMessage=""
                     showClearDate={false}
                     showDefaultInputIcon={false}
-                    weekDayFormat="dd"
                     withFullScreenPortal={false}
                     withPortal={false}
           />
@@ -159,7 +155,6 @@ ShallowWrapper {
               horizontalMargin={0}
               id="date"
               initialVisibleMonth={null}
-              inputIconPosition="before"
               isDayBlocked={[Function]}
               isDayHighlighted={[Function]}
               isOutsideRange={[Function]}
@@ -174,11 +169,9 @@ ShallowWrapper {
               onFocusChange={[Function]}
               onNextMonthClick={[Function]}
               onPrevMonthClick={[Function]}
-              openDirection="down"
               orientation="horizontal"
               phrases={
                             Object {
-                                          "calendarLabel": "Calendar",
                                           "chooseAvailableDate": [Function],
                                           "clearDate": "Clear Date",
                                           "closeDatePicker": "Close",
@@ -216,7 +209,6 @@ ShallowWrapper {
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
 />,
@@ -281,7 +273,6 @@ ShallowWrapper {
               "horizontalMargin": 0,
               "id": "date",
               "initialVisibleMonth": null,
-              "inputIconPosition": "before",
               "isDayBlocked": [Function],
               "isDayHighlighted": [Function],
               "isOutsideRange": [Function],
@@ -296,10 +287,8 @@ ShallowWrapper {
               "onFocusChange": [Function],
               "onNextMonthClick": [Function],
               "onPrevMonthClick": [Function],
-              "openDirection": "down",
               "orientation": "horizontal",
               "phrases": Object {
-                "calendarLabel": "Calendar",
                 "chooseAvailableDate": [Function],
                 "clearDate": "Clear Date",
                 "closeDatePicker": "Close",
@@ -336,7 +325,6 @@ ShallowWrapper {
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
             },
@@ -413,7 +401,6 @@ ShallowWrapper {
                         horizontalMargin={0}
                         id="date"
                         initialVisibleMonth={null}
-                        inputIconPosition="before"
                         isDayBlocked={[Function]}
                         isDayHighlighted={[Function]}
                         isOutsideRange={[Function]}
@@ -428,11 +415,9 @@ ShallowWrapper {
                         onFocusChange={[Function]}
                         onNextMonthClick={[Function]}
                         onPrevMonthClick={[Function]}
-                        openDirection="down"
                         orientation="horizontal"
                         phrases={
                                     Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -470,7 +455,6 @@ ShallowWrapper {
                         screenReaderInputMessage=""
                         showClearDate={false}
                         showDefaultInputIcon={false}
-                        weekDayFormat="dd"
                         withFullScreenPortal={false}
                         withPortal={false}
             />
@@ -522,7 +506,6 @@ ShallowWrapper {
                 horizontalMargin={0}
                 id="date"
                 initialVisibleMonth={null}
-                inputIconPosition="before"
                 isDayBlocked={[Function]}
                 isDayHighlighted={[Function]}
                 isOutsideRange={[Function]}
@@ -537,11 +520,9 @@ ShallowWrapper {
                 onFocusChange={[Function]}
                 onNextMonthClick={[Function]}
                 onPrevMonthClick={[Function]}
-                openDirection="down"
                 orientation="horizontal"
                 phrases={
                                 Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -579,7 +560,6 @@ ShallowWrapper {
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
 />,
@@ -644,7 +624,6 @@ ShallowWrapper {
                 "horizontalMargin": 0,
                 "id": "date",
                 "initialVisibleMonth": null,
-                "inputIconPosition": "before",
                 "isDayBlocked": [Function],
                 "isDayHighlighted": [Function],
                 "isOutsideRange": [Function],
@@ -659,10 +638,8 @@ ShallowWrapper {
                 "onFocusChange": [Function],
                 "onNextMonthClick": [Function],
                 "onPrevMonthClick": [Function],
-                "openDirection": "down",
                 "orientation": "horizontal",
                 "phrases": Object {
-                  "calendarLabel": "Calendar",
                   "chooseAvailableDate": [Function],
                   "clearDate": "Clear Date",
                   "closeDatePicker": "Close",
@@ -699,7 +676,6 @@ ShallowWrapper {
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
               },
@@ -742,6 +718,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -750,7 +736,6 @@ ShallowWrapper {
 
 exports[`should render ExpenseForm correctly with expense data 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseForm
     expense={
@@ -767,6 +752,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -808,7 +794,6 @@ ShallowWrapper {
                     horizontalMargin={0}
                     id="date"
                     initialVisibleMonth={null}
-                    inputIconPosition="before"
                     isDayBlocked={[Function]}
                     isDayHighlighted={[Function]}
                     isOutsideRange={[Function]}
@@ -823,11 +808,9 @@ ShallowWrapper {
                     onFocusChange={[Function]}
                     onNextMonthClick={[Function]}
                     onPrevMonthClick={[Function]}
-                    openDirection="down"
                     orientation="horizontal"
                     phrases={
                               Object {
-                                        "calendarLabel": "Calendar",
                                         "chooseAvailableDate": [Function],
                                         "clearDate": "Clear Date",
                                         "closeDatePicker": "Close",
@@ -865,7 +848,6 @@ ShallowWrapper {
                     screenReaderInputMessage=""
                     showClearDate={false}
                     showDefaultInputIcon={false}
-                    weekDayFormat="dd"
                     withFullScreenPortal={false}
                     withPortal={false}
           />
@@ -917,7 +899,6 @@ ShallowWrapper {
               horizontalMargin={0}
               id="date"
               initialVisibleMonth={null}
-              inputIconPosition="before"
               isDayBlocked={[Function]}
               isDayHighlighted={[Function]}
               isOutsideRange={[Function]}
@@ -932,11 +913,9 @@ ShallowWrapper {
               onFocusChange={[Function]}
               onNextMonthClick={[Function]}
               onPrevMonthClick={[Function]}
-              openDirection="down"
               orientation="horizontal"
               phrases={
                             Object {
-                                          "calendarLabel": "Calendar",
                                           "chooseAvailableDate": [Function],
                                           "clearDate": "Clear Date",
                                           "closeDatePicker": "Close",
@@ -974,7 +953,6 @@ ShallowWrapper {
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
 />,
@@ -1039,7 +1017,6 @@ ShallowWrapper {
               "horizontalMargin": 0,
               "id": "date",
               "initialVisibleMonth": null,
-              "inputIconPosition": "before",
               "isDayBlocked": [Function],
               "isDayHighlighted": [Function],
               "isOutsideRange": [Function],
@@ -1054,10 +1031,8 @@ ShallowWrapper {
               "onFocusChange": [Function],
               "onNextMonthClick": [Function],
               "onPrevMonthClick": [Function],
-              "openDirection": "down",
               "orientation": "horizontal",
               "phrases": Object {
-                "calendarLabel": "Calendar",
                 "chooseAvailableDate": [Function],
                 "clearDate": "Clear Date",
                 "closeDatePicker": "Close",
@@ -1094,7 +1069,6 @@ ShallowWrapper {
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
             },
@@ -1171,7 +1145,6 @@ ShallowWrapper {
                         horizontalMargin={0}
                         id="date"
                         initialVisibleMonth={null}
-                        inputIconPosition="before"
                         isDayBlocked={[Function]}
                         isDayHighlighted={[Function]}
                         isOutsideRange={[Function]}
@@ -1186,11 +1159,9 @@ ShallowWrapper {
                         onFocusChange={[Function]}
                         onNextMonthClick={[Function]}
                         onPrevMonthClick={[Function]}
-                        openDirection="down"
                         orientation="horizontal"
                         phrases={
                                     Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -1228,7 +1199,6 @@ ShallowWrapper {
                         screenReaderInputMessage=""
                         showClearDate={false}
                         showDefaultInputIcon={false}
-                        weekDayFormat="dd"
                         withFullScreenPortal={false}
                         withPortal={false}
             />
@@ -1280,7 +1250,6 @@ ShallowWrapper {
                 horizontalMargin={0}
                 id="date"
                 initialVisibleMonth={null}
-                inputIconPosition="before"
                 isDayBlocked={[Function]}
                 isDayHighlighted={[Function]}
                 isOutsideRange={[Function]}
@@ -1295,11 +1264,9 @@ ShallowWrapper {
                 onFocusChange={[Function]}
                 onNextMonthClick={[Function]}
                 onPrevMonthClick={[Function]}
-                openDirection="down"
                 orientation="horizontal"
                 phrases={
                                 Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -1337,7 +1304,6 @@ ShallowWrapper {
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
 />,
@@ -1402,7 +1368,6 @@ ShallowWrapper {
                 "horizontalMargin": 0,
                 "id": "date",
                 "initialVisibleMonth": null,
-                "inputIconPosition": "before",
                 "isDayBlocked": [Function],
                 "isDayHighlighted": [Function],
                 "isOutsideRange": [Function],
@@ -1417,10 +1382,8 @@ ShallowWrapper {
                 "onFocusChange": [Function],
                 "onNextMonthClick": [Function],
                 "onPrevMonthClick": [Function],
-                "openDirection": "down",
                 "orientation": "horizontal",
                 "phrases": Object {
-                  "calendarLabel": "Calendar",
                   "chooseAvailableDate": [Function],
                   "clearDate": "Clear Date",
                   "closeDatePicker": "Close",
@@ -1457,7 +1420,6 @@ ShallowWrapper {
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
               },
@@ -1500,6 +1462,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -1508,13 +1480,13 @@ ShallowWrapper {
 
 exports[`should render error for invalid form submission 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseForm />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -1556,7 +1528,6 @@ ShallowWrapper {
                     horizontalMargin={0}
                     id="date"
                     initialVisibleMonth={null}
-                    inputIconPosition="before"
                     isDayBlocked={[Function]}
                     isDayHighlighted={[Function]}
                     isOutsideRange={[Function]}
@@ -1571,11 +1542,9 @@ ShallowWrapper {
                     onFocusChange={[Function]}
                     onNextMonthClick={[Function]}
                     onPrevMonthClick={[Function]}
-                    openDirection="down"
                     orientation="horizontal"
                     phrases={
                               Object {
-                                        "calendarLabel": "Calendar",
                                         "chooseAvailableDate": [Function],
                                         "clearDate": "Clear Date",
                                         "closeDatePicker": "Close",
@@ -1613,7 +1582,6 @@ ShallowWrapper {
                     screenReaderInputMessage=""
                     showClearDate={false}
                     showDefaultInputIcon={false}
-                    weekDayFormat="dd"
                     withFullScreenPortal={false}
                     withPortal={false}
           />
@@ -1665,7 +1633,6 @@ ShallowWrapper {
               horizontalMargin={0}
               id="date"
               initialVisibleMonth={null}
-              inputIconPosition="before"
               isDayBlocked={[Function]}
               isDayHighlighted={[Function]}
               isOutsideRange={[Function]}
@@ -1680,11 +1647,9 @@ ShallowWrapper {
               onFocusChange={[Function]}
               onNextMonthClick={[Function]}
               onPrevMonthClick={[Function]}
-              openDirection="down"
               orientation="horizontal"
               phrases={
                             Object {
-                                          "calendarLabel": "Calendar",
                                           "chooseAvailableDate": [Function],
                                           "clearDate": "Clear Date",
                                           "closeDatePicker": "Close",
@@ -1722,7 +1687,6 @@ ShallowWrapper {
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
 />,
@@ -1787,7 +1751,6 @@ ShallowWrapper {
               "horizontalMargin": 0,
               "id": "date",
               "initialVisibleMonth": null,
-              "inputIconPosition": "before",
               "isDayBlocked": [Function],
               "isDayHighlighted": [Function],
               "isOutsideRange": [Function],
@@ -1802,10 +1765,8 @@ ShallowWrapper {
               "onFocusChange": [Function],
               "onNextMonthClick": [Function],
               "onPrevMonthClick": [Function],
-              "openDirection": "down",
               "orientation": "horizontal",
               "phrases": Object {
-                "calendarLabel": "Calendar",
                 "chooseAvailableDate": [Function],
                 "clearDate": "Clear Date",
                 "closeDatePicker": "Close",
@@ -1842,7 +1803,6 @@ ShallowWrapper {
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
             },
@@ -1919,7 +1879,6 @@ ShallowWrapper {
                         horizontalMargin={0}
                         id="date"
                         initialVisibleMonth={null}
-                        inputIconPosition="before"
                         isDayBlocked={[Function]}
                         isDayHighlighted={[Function]}
                         isOutsideRange={[Function]}
@@ -1934,11 +1893,9 @@ ShallowWrapper {
                         onFocusChange={[Function]}
                         onNextMonthClick={[Function]}
                         onPrevMonthClick={[Function]}
-                        openDirection="down"
                         orientation="horizontal"
                         phrases={
                                     Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -1976,7 +1933,6 @@ ShallowWrapper {
                         screenReaderInputMessage=""
                         showClearDate={false}
                         showDefaultInputIcon={false}
-                        weekDayFormat="dd"
                         withFullScreenPortal={false}
                         withPortal={false}
             />
@@ -2028,7 +1984,6 @@ ShallowWrapper {
                 horizontalMargin={0}
                 id="date"
                 initialVisibleMonth={null}
-                inputIconPosition="before"
                 isDayBlocked={[Function]}
                 isDayHighlighted={[Function]}
                 isOutsideRange={[Function]}
@@ -2043,11 +1998,9 @@ ShallowWrapper {
                 onFocusChange={[Function]}
                 onNextMonthClick={[Function]}
                 onPrevMonthClick={[Function]}
-                openDirection="down"
                 orientation="horizontal"
                 phrases={
                                 Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -2085,7 +2038,6 @@ ShallowWrapper {
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
 />,
@@ -2150,7 +2102,6 @@ ShallowWrapper {
                 "horizontalMargin": 0,
                 "id": "date",
                 "initialVisibleMonth": null,
-                "inputIconPosition": "before",
                 "isDayBlocked": [Function],
                 "isDayHighlighted": [Function],
                 "isOutsideRange": [Function],
@@ -2165,10 +2116,8 @@ ShallowWrapper {
                 "onFocusChange": [Function],
                 "onNextMonthClick": [Function],
                 "onPrevMonthClick": [Function],
-                "openDirection": "down",
                 "orientation": "horizontal",
                 "phrases": Object {
-                  "calendarLabel": "Calendar",
                   "chooseAvailableDate": [Function],
                   "clearDate": "Clear Date",
                   "closeDatePicker": "Close",
@@ -2205,7 +2154,6 @@ ShallowWrapper {
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
               },
@@ -2248,6 +2196,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
@@ -2256,13 +2214,13 @@ ShallowWrapper {
 
 exports[`should render error for invalid form submission 2`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ExpenseForm />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -2306,7 +2264,6 @@ ShallowWrapper {
                     horizontalMargin={0}
                     id="date"
                     initialVisibleMonth={null}
-                    inputIconPosition="before"
                     isDayBlocked={[Function]}
                     isDayHighlighted={[Function]}
                     isOutsideRange={[Function]}
@@ -2321,11 +2278,9 @@ ShallowWrapper {
                     onFocusChange={[Function]}
                     onNextMonthClick={[Function]}
                     onPrevMonthClick={[Function]}
-                    openDirection="down"
                     orientation="horizontal"
                     phrases={
                               Object {
-                                        "calendarLabel": "Calendar",
                                         "chooseAvailableDate": [Function],
                                         "clearDate": "Clear Date",
                                         "closeDatePicker": "Close",
@@ -2363,7 +2318,6 @@ ShallowWrapper {
                     screenReaderInputMessage=""
                     showClearDate={false}
                     showDefaultInputIcon={false}
-                    weekDayFormat="dd"
                     withFullScreenPortal={false}
                     withPortal={false}
           />
@@ -2425,7 +2379,6 @@ ShallowWrapper {
               horizontalMargin={0}
               id="date"
               initialVisibleMonth={null}
-              inputIconPosition="before"
               isDayBlocked={[Function]}
               isDayHighlighted={[Function]}
               isOutsideRange={[Function]}
@@ -2440,11 +2393,9 @@ ShallowWrapper {
               onFocusChange={[Function]}
               onNextMonthClick={[Function]}
               onPrevMonthClick={[Function]}
-              openDirection="down"
               orientation="horizontal"
               phrases={
                             Object {
-                                          "calendarLabel": "Calendar",
                                           "chooseAvailableDate": [Function],
                                           "clearDate": "Clear Date",
                                           "closeDatePicker": "Close",
@@ -2482,7 +2433,6 @@ ShallowWrapper {
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
 />,
@@ -2547,7 +2497,6 @@ ShallowWrapper {
               "horizontalMargin": 0,
               "id": "date",
               "initialVisibleMonth": null,
-              "inputIconPosition": "before",
               "isDayBlocked": [Function],
               "isDayHighlighted": [Function],
               "isOutsideRange": [Function],
@@ -2562,10 +2511,8 @@ ShallowWrapper {
               "onFocusChange": [Function],
               "onNextMonthClick": [Function],
               "onPrevMonthClick": [Function],
-              "openDirection": "down",
               "orientation": "horizontal",
               "phrases": Object {
-                "calendarLabel": "Calendar",
                 "chooseAvailableDate": [Function],
                 "clearDate": "Clear Date",
                 "closeDatePicker": "Close",
@@ -2602,7 +2549,6 @@ ShallowWrapper {
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
             },
@@ -2681,7 +2627,6 @@ ShallowWrapper {
                         horizontalMargin={0}
                         id="date"
                         initialVisibleMonth={null}
-                        inputIconPosition="before"
                         isDayBlocked={[Function]}
                         isDayHighlighted={[Function]}
                         isOutsideRange={[Function]}
@@ -2696,11 +2641,9 @@ ShallowWrapper {
                         onFocusChange={[Function]}
                         onNextMonthClick={[Function]}
                         onPrevMonthClick={[Function]}
-                        openDirection="down"
                         orientation="horizontal"
                         phrases={
                                     Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -2738,7 +2681,6 @@ ShallowWrapper {
                         screenReaderInputMessage=""
                         showClearDate={false}
                         showDefaultInputIcon={false}
-                        weekDayFormat="dd"
                         withFullScreenPortal={false}
                         withPortal={false}
             />
@@ -2800,7 +2742,6 @@ ShallowWrapper {
                 horizontalMargin={0}
                 id="date"
                 initialVisibleMonth={null}
-                inputIconPosition="before"
                 isDayBlocked={[Function]}
                 isDayHighlighted={[Function]}
                 isOutsideRange={[Function]}
@@ -2815,11 +2756,9 @@ ShallowWrapper {
                 onFocusChange={[Function]}
                 onNextMonthClick={[Function]}
                 onPrevMonthClick={[Function]}
-                openDirection="down"
                 orientation="horizontal"
                 phrases={
                                 Object {
-                                                "calendarLabel": "Calendar",
                                                 "chooseAvailableDate": [Function],
                                                 "clearDate": "Clear Date",
                                                 "closeDatePicker": "Close",
@@ -2857,7 +2796,6 @@ ShallowWrapper {
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
 />,
@@ -2922,7 +2860,6 @@ ShallowWrapper {
                 "horizontalMargin": 0,
                 "id": "date",
                 "initialVisibleMonth": null,
-                "inputIconPosition": "before",
                 "isDayBlocked": [Function],
                 "isDayHighlighted": [Function],
                 "isOutsideRange": [Function],
@@ -2937,10 +2874,8 @@ ShallowWrapper {
                 "onFocusChange": [Function],
                 "onNextMonthClick": [Function],
                 "onPrevMonthClick": [Function],
-                "openDirection": "down",
                 "orientation": "horizontal",
                 "phrases": Object {
-                  "calendarLabel": "Calendar",
                   "chooseAvailableDate": [Function],
                   "clearDate": "Clear Date",
                   "closeDatePicker": "Close",
@@ -2977,7 +2912,6 @@ ShallowWrapper {
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
               },
@@ -3020,6 +2954,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
