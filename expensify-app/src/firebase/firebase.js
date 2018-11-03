@@ -11,6 +11,26 @@ const config = {
 
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-  name: 'Luis F. Bilecki'
+const database = firebase.database();
+
+database.ref().set({
+  name: 'Luis F. Bilecki',
+  age: 25,
+  isSingle: true,
+  location: {
+    city: 'Rio Negrinho',
+    country: 'Brazil'
+  }
 });
+
+// database.ref().set('This is my data.');
+
+database.ref('age').set(25);
+database.ref('location/city').set('Joinville');
+
+database.ref('attributes').set({
+  height: 173,
+  weight: 69
+});
+
+console.log('I made a request to change the data.');
