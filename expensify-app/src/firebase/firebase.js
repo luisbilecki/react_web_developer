@@ -13,6 +13,8 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
+export { firebase, database as default  };
+/*
 // child_removed
 database.ref('expenses').on('child_removed', (snapshot) => {
   console.log(snapshot.key, snapshot.val());
@@ -122,7 +124,7 @@ database
   }).catch((e) => {
     console.log('Did not remove data', e);
   });
-*/
 
 // console.log('I made a request to change the data.');
 
+*/
