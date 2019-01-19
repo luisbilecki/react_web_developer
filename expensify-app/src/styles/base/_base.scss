@@ -3,8 +3,10 @@ html {
 }
 
 body {
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
@@ -17,13 +19,4 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
-}
-
-.menu {
-  display: flex;
-  width: 100%;
-
-  a {
-    padding: 20px 10px;
-  }
 }
