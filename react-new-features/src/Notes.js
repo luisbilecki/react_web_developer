@@ -38,11 +38,7 @@ const Notes = () => {
 
       {
         notes.map((note, idx) => (
-            <div key={idx}>
-              <h3>{note.title}</h3>
-              <p>{note.body}</p>
-              <button onClick={() => removeNote(idx)}>&times;</button>
-            </div>
+            <Note key={idx} idx={idx} note={note} removeNote={removeNote} />
         ))
       }
 
@@ -55,5 +51,24 @@ const Notes = () => {
     </div>
   )
 };
+
+const Note = ({ idx, note, removeNote }) => {
+  useEffect(() => {
+    console.log('Setting up effect!');
+
+    // ComponentDidUnmount
+    return () => {
+      console.log('Cleaning up effect!');
+    }
+  }, [note]);
+
+  return (
+    <div>
+      <h3>{note.title}</h3>
+      <p>{note.body}</p>
+      <button onClick={() => removeNote(idx)}>&times;</button>
+    </div>
+  )
+}
 
 export default Notes;
