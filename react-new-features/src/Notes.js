@@ -1,14 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
+
+const notesReducer = (state, action) => {
+  switch (action.type) {
+    case 'POPULATE_NOTES':
+      return action.notes;
+    case 'ADD_NOTE':
+      return [
+        ...state,
+        { title: action.title, body: action.body }
+      ];
+    case 'REMOVE_NOTE':
+      return state.filter(note => note.title !== action.title);
+    default:
+      return state;
+  }
+};
 
 const Notes = () => {
-  const [notes, setNotes] = useState([]);
+  const [notes, dispatch] = useReducer(notesReducer, []);
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
   useEffect(() => {
     const myNotes = localStorage.getItem('notes');
 
-    setNotes(myNotes ? JSON.parse(myNotes) : []);
+    dispatch({ 
+      type: 'POPULATE_NOTES', 
+      notes: myNotes ? JSON.parse(myNotes) : []
+    });
   }, [])
 
   useEffect(() => {
@@ -18,18 +37,20 @@ const Notes = () => {
   const addNote = (e) => {
     e.preventDefault();
 
-    setNotes([
-      ...notes,
-      { title, body }
-    ]);
+    dispatch({
+      type: 'ADD_NOTE',
+      title: title,
+      body: body,
+    });
     setTitle('');
     setBody('');
   };
 
-  const removeNote = (idToRemove) => {
-    const newNotes = notes.filter((_, index) => index !== idToRemove);
-    
-    setNotes(newNotes);
+  const removeNote = (title) => {
+    dispatch({
+      type: 'REMOVE_NOTE',
+      title: title,
+    });
   };
 
   return (
@@ -66,7 +87,7 @@ const Note = ({ idx, note, removeNote }) => {
     <div>
       <h3>{note.title}</h3>
       <p>{note.body}</p>
-      <button onClick={() => removeNote(idx)}>&times;</button>
+      <button onClick={() => removeNote(note.title)}>&times;</button>
     </div>
   )
 }
