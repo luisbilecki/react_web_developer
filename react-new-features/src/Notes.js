@@ -6,8 +6,14 @@ const Notes = () => {
   const [body, setBody] = useState('');
 
   useEffect(() => {
+    const myNotes = localStorage.getItem('notes');
+
+    setNotes(myNotes ? JSON.parse(myNotes) : []);
+  }, [])
+
+  useEffect(() => {
     localStorage.setItem('notes', JSON.stringify(notes));
-  })
+  }, [notes])
 
   const addNote = (e) => {
     e.preventDefault();

@@ -4,10 +4,15 @@ const App = (props) => {
   const [count, setCount] = useState(props.count);
   const [text, setText] = useState('');
   
+  // Fetching or rendering data
+  useEffect(() => {
+    console.log('This should only run ounc');
+  }, []);
+
   useEffect(() => {
     console.log('useEffect ran');
     document.title = count;
-  });
+  }, [count]); // only when count changes
 
   return (
     <div>
